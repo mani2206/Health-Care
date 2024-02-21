@@ -1,0 +1,52 @@
+footer{
+    background-color: $light;
+    p{
+        color: $light-blue;
+    }
+    .icon{
+        i{
+            background-color: $light-blue;
+            color: $white;
+            padding: 18px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+    }
+    h5,h4,p{
+        @include print-styles($font-medium-bold);
+    }
+    ul{
+        li{
+            list-style: none;
+            padding: 7px 0px;
+            a{
+                text-decoration: none;
+                color: $light-blue;
+                @include print-styles($font-medium-bold);
+            }
+        }
+    }
+    .address{
+        position: relative;
+        input[type=email]{
+            width: 100%;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            outline: none;
+            @include print-styles($font-medium-bold);
+            @include media-min-lg{
+                padding: 15px 20px;
+            }
+        }
+        .btn-app{
+            position: absolute;
+            top: 2px;
+            right: 5%;
+            @include media-min-lg{
+                right: 2%;
+                padding: 12px 20px;
+            }
+        }
+    }
+}

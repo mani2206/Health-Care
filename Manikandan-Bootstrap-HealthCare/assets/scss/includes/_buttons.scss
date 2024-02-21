@@ -1,0 +1,11 @@
+.btn-app,.btn-app2{
+    background-color: $pink !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    @include print-styles($font-medium-bold);
+    color: $white;
+    border: none;
+}
+.btn-app2{
+    background-color: $indigo !important;
+}

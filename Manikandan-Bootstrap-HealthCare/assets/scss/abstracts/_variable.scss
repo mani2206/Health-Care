@@ -1,0 +1,37 @@
+$pink:#e12454;
+$light:#f4f9fc;
+$white:white;
+$black:black;
+$light-blue:#6F8BA4;
+$indigo:  #223a66;
+// font family
+$font-family:'Exo', sans-serif;
+$font-light: (
+    font-family: $font-family,
+    font-weight: 200,
+);
+$font-regular: (
+    font-family: $font-family,
+    font-weight: 300,
+);
+$font-medium: (
+    font-family: $font-family,
+    font-weight: 400,
+);
+$font-medium-bold: (
+    font-family: $font-family,
+    font-weight: 600,
+);
+$font-bold: (
+    font-family: $font-family,
+    font-weight: 700,
+);
+$font-extrabold: (
+    font-family: $font-family,
+    font-weight: 800,
+);
+@mixin print-styles($map) {
+    @each $property, $value in $map {
+        #{$property}: $value;
+    }
+}
